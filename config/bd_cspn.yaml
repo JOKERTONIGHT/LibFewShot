@@ -1,0 +1,18 @@
+includes:
+  - headers/data.yaml
+  - headers/device.yaml
+  - headers/misc.yaml
+  - headers/model.yaml
+  - headers/optimizer.yaml
+  - backbones/WRN.yaml
+
+classifier:
+  name: BDCSPN
+
+
+backbone:
+ name: WRN
+ kwargs:
+   depth: 28
+   widen_factor: 10
+
